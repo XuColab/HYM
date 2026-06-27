@@ -123,7 +123,7 @@ for name, model in models.items():
     best_params = model.get_params()
     
     # 控制台输出
-    print(f"\n📌 模型: {name}")
+    print(f"\n 模型: {name}")
     print(f"   R²  ：{r2:.4f}")
     print(f"   MSE ：{mse:.6f}")
     print(f"   RMSE：{rmse:.4f}")
@@ -143,7 +143,7 @@ params_df = pd.DataFrame(params_list)
 params_df.to_csv("best_model_params_with_metrics.csv", index=False, encoding="utf-8-sig")
 
 print("\n" + "="*70)
-print("✅ 已保存：best_model_params_with_metrics.csv")
+print("已保存：best_model_params_with_metrics.csv")
 print("="*70 + "\n")
 # =====================
 # 6. 统一约束函数（预测结果限制在[0,1]）
